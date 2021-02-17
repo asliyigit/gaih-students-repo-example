@@ -55,9 +55,9 @@ def asalmi(sayi):
     return False
  
 
-for i in range(3):
+for i in range(0,3):
     print("\n")
-    for j in range(3):
+    for j in range(0,3):
         while True:
             sayi=random.randint(1, 10)
             if(asalmi(sayi)==True):
