@@ -1,4 +1,4 @@
-# Kod açıklanmıştır, hem fonksiyon kullanmadan hemde fonksiyon kullanarak sonuç bulunmuştur.
+#Kod açıklanmıştır, hem fonksiyon kullanmadan hemde fonksiyon kullanarak sonuç bulunmuştur.
 '''
 SORU:
 Generating a 3x3 matrix with 9 random prime numbers. (You have to do it using the for loop.)
@@ -14,20 +14,22 @@ While döngüsü sonsuz döngü olarak kullanılır. Kodda sayının 1'den büy�
 Sayı 1'den büyük ise bir for döngüsü ile en küçük asal sayı 2 oldugu için 2'den sayıya kadar olan(uretilen sayı dahil 
 değil) tüm sayıların moduna(kalanına) bakar. Aralıktaki herhangi bir rakamın (k) kalanı 0 olursa rastgele üretilen sayı
 asal değildir, döngüden break ile çıkılır. for içerisindeki if koşulu hiçbir zaman sağlanmazsa üretilen sayi asaldır,
-bu durumda sayi ekrana yazdırılır.
+bu durumda number ekrana yazdırılır.
 '''
+
+print("FONKSİYON KULLANMADAN BULUNAN ASAL SAYILAR MATRİSİ")
 for i in range(0,3):
     print("\n")
     for j in range(0,3):
         while True:
-            sayi=rnd.randint(1, 10)
-            if sayi>1:
-                for k in range(2,sayi):
-                    if(sayi%k)==0:
-                        break # asal olmama durumu
+            number=rnd.randint(1, 10) #1-10 arası int veri türünde rastgele sayı üretilir.
+            if number>1:  #eğer number 1'den büyük ise
+                for k in range(2,number): # 2'den number-1'e kadar devam eden döngüye girer
+                    if(number%k)==0: # number değişkeninin herhangi bir sayı(i değerine) ile bölümünden kalan 0 ise sayı asal değildir
+                        break # asal olmama durumudur, döngüyü kırar ve döngüden çıkar.
                 else:
-                    print(sayi,end=" ")
-                    break
+                    print(number,end="\t")# number değişkeni, 1 ve kendisinden başka herhangi bir sayıya bölünmüyorsa sonucu ekrana yazdırır.
+                    break # while ile oluşturulan sonsuz döngüyü kırar.
 
 ''' 
 FONKSİYON İLE BULUNAN SONUÇ 
@@ -45,22 +47,21 @@ fonksiyon False değerini döndürür. for içerisindeki if koşulu hiçbir zama
 ve fonksiyon True değerini döndürür.
 '''
 
-'''
-def asalmi(sayi):  
-    if sayi > 1:
-        for i in range(2,sayi):
-            if (sayi % i) == 0:
-                return False #asal degil           
-        return True #asal
+
+def asalmi(number):  
+    if number > 1: #eğer sayı 1'den büyük ise
+        for i in range(2,number): # 2'den number-1'e kadar devam eden döngüye girer
+            if (number % i) == 0: # number değişkeninin herhangi bir sayı(i değerine) ile bölümünden kalan 0 ise sayı asal değildir
+                return False # asal olmama durumudur, fonksiyon False değerini döndürür    
+        return True # asal olma durumudur, fonksiyon True değerini döndürür    
     return False
  
-
+print("\nFONKSİYON İLE BULUNAN ASAL SAYILAR MATRİSİ")
 for i in range(0,3):
     print("\n")
     for j in range(0,3):
         while True:
-            sayi=random.randint(1, 10)
-            if(asalmi(sayi)==True):
-                print(sayi,end=" ")
-                break
-'''
+            number=rnd.randint(1, 10) #1-10 arası int veri türünde rastgele sayı üretilir.
+            if(asalmi(number)==True): # eğer asalmi fonksiyonundan dönen değer True ise sayı asaldır ve sayı ekrana yazdırılır 
+                print(number,end="\t")
+                break # while ile oluşturulan sonsuz döngüyü kırar.
