@@ -37,10 +37,10 @@ information={"name": [nameSurnameList[0],nameSurnameList[1],nameSurnameList[2],n
 print("\ninformation:")
 print(information) #kontrol amaçlı information ekrana yazdırılır
 
-average=[] #en başarılı öğrenciyi belirlemek için average listesinde vize, final ve ödevlerin ortalamaları hesaplanacaktır 
+average=[] #average listesi ile en başarılı öğrenciyi belirlemek için vize, final ve ödevlerin ortalamaları hesaplanacaktır 
 for i in range(5): 
 	average.append((information["midterm"][i]+information["final"][i]+information["homework"][i])/3)# information'da 
-	#ilgili alanlardaki (midterm, final, homework) değerler (i'ler) alınır ve ortalama hesaplanır.
+	#ilgili alanlardaki (midterm, final, homework) değerler (i'ler) alınır. Her öğrenci için (5 öğrenci) average hesaplanır.
 
 print("\naverage:")
 print(average) #kontrol amaçlı average listesi ekrana yazdırılır
