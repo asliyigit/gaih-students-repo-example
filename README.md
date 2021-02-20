@@ -12,18 +12,18 @@ Kocaeli Üniversitesi Bilgisayar Mühendisliği 4.sınıf öğrencisiyim. Nerede
 
 **Yetenekler:**
 
-C++
-C#
-C
-Java
-CSS
-Microsoft SQL Server 
-Reinforcement Learning
-Deep Reinforcement Learning
-Microsoft Office
-Microsoft Excel
-Microsoft Word
-PowerPoint
+* C++
+* C#
+* C
+* Java
+* CSS
+* Microsoft SQL Server 
+* Reinforcement Learning
+* Deep Reinforcement Learning
+* Microsoft Office
+* Microsoft Excel
+* Microsoft Word
+* PowerPoint
 
 
 Ekibiniz çok güzel, 5 günlük eğitimde çok verimli idi. Top Learner olursam, Global AI Hub komitesi ile aranızda olmak, eğitimler vererek ekip ruhunu yansıtmak istiyorum.  
