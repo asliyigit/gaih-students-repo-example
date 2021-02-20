@@ -19,6 +19,7 @@ Ekibiniz çok güzel, 5 günlük eğitimde çok verimli idi. Top Learner olursam
 * C#
 * C
 * Java
+* Python
 * CSS
 * Microsoft SQL Server 
 * Reinforcement Learning
